@@ -24,6 +24,7 @@ ERS (Enhanced Reconsideration System) is a memory-management and reconsideration
 - embedding & tensor processing via a PMLL-like lattice and multi-petal attention,
 - knowledge-graph integration (Graphiti) and ID-based memory store (Mem0),
 - recursive loops for multi-pass validation (reconsideration),
+- optional stdlib certificate gate (`certified_reconsider.py`): a caller may attach a finite GF(2) Farkas or tiny DRUP certificate and refuse admission if verification fails; this does not replace heuristic `reconsider_memory` and is not a proof of an open problem.
 - consensus, temporal decay and contradiction detection for self-correction,
 - state persistence (JSON + safetensors) for continuity across runs.
 
